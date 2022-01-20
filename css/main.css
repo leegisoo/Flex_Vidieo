@@ -14,4 +14,159 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: #333;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+main header {
+  width: 20%;
+  height: 100%;
+  padding: 10vh 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+main header h1 {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+main header h1 i {
+  font-size: 5vw;
+  margin-bottom: 15px;
+}
+main header h1 span {
+  font: normal 0.8vw/1 "arial";
+  width: 100%;
+  text-align: center;
+}
+main header p {
+  font: normal 0.8vw/1.2 "arial";
+  color: #888;
+  width: 100%;
+  text-align: center;
+}
+main section {
+  width: 80%;
+  height: 100%;
+  padding: 10vh;
+  display: flex;
+}
+main section article {
+  flex: 1;
+  height: 100%;
+  transition: 0.5s;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+main section article .inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 50px 30px 100px;
+}
+main section article .inner .txt {
+  width: 75%;
+  padding-top: 70px;
+  transition: 1s;
+}
+main section article .inner .txt h2 {
+  font: normal 2vw/1 "Alegreya sans";
+  color: white;
+  margin-bottom: 40px;
+  transition: 0.5s;
+}
+main section article .inner .txt h2::after {
+  margin-top: 20px;
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: #777;
+  display: block;
+  transition: 1.5s;
+}
+main section article .inner .txt p {
+  font: 14px/1.4 "arial";
+  color: #777;
+  transition: 1.5s;
+}
+main section article .inner figure {
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+  transition: 0.5s;
+  position: relative;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+main section article .inner figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main section article::before {
+  content: "";
+  width: 80%;
+  height: 95%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  opacity: 0;
+  background: #444;
+  transition: 1s;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+main section article:hover {
+  flex: 1.3;
+}
+main section article:hover::before {
+  opacity: 1;
+  left: 0px;
+}
+main section article:hover .inner .txt {
+  padding-top: 0px;
+}
+main section article:hover .inner .txt h2 {
+  font-size: 5vw;
+}
+main section article:hover .inner .txt h2::after {
+  width: 60%;
+  background: #e9e9e9;
+}
+main section article:hover .inner p {
+  color: #e9e9e9;
+}
+main section article:hover .inner figure {
+  height: 20vh;
+  top: 25px;
+  left: 10px;
+}
+main nav {
+  position: absolute;
+  top: 4vh;
+  right: 5vh;
+}
+main nav ul {
+  display: flex;
+}
+main nav ul li {
+  margin: 15px;
+}
+main nav ul li a {
+  font-size: 18px;
+  color: #bbb;
+}
+
 /*# sourceMappingURL=main.css.map */
